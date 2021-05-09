@@ -1,0 +1,129 @@
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, oneside]{Thesis} % The default font size and one-sided printing (no margin offsets)
+
+\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+\title{\ttitle} % Defines the thesis title - don't touch this
+
+
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\setstretch{1.3} % Line spacing of 1.3
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{} % Clears all page headers and footers
+\rhead{\thepage} % Sets the right side header to show the page number
+\lhead{} % Clears the left side page header
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+\pagenumbering{roman}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
+% PDF meta-data
+\hypersetup{pdftitle={\ttitle}}
+\hypersetup{pdfsubject=\subjectname}
+\hypersetup{pdfauthor=\authornames}
+\hypersetup{pdfkeywords=\keywordnames}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+%Title Page
+	\begin{titlepage}   
+	\renewcommand{\baselinestretch}{1}
+		\begin{center}
+			{\Large \bf {Amrutvahini College of Engineering, Sangamner 422608}}\\
+			{\bf {Department of Computer Engineering}}\\
+			{\bf {Seminar Synopsis}}
+			
+			
+			\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+		\end{center}
+		{\bf {Seminar Title:}} {"YOLO Object Detection"}\\
+			{\bf {Presented by: }} {Sagar Siddharth Waghmare}\\
+			{\bf {Class: TE (B) }}\\
+			{\bf{Roll Number: }} {3265}\\
+			{\bf {Guide: }} { Prof. P.D. Walunj}\\			
+			{\bf {Area/Domain: }}{Deep Learning and Image Processing}\\
+			{\bf {Keywords: }}{Computer vision; YOLO v3; Faster RCNN; Deep 
+learning; YOLO v3-Tiny; Object detection; image processing; 
+Convolutional Neural Networks. }
+			 \section*{Abstract}
+			Object detection based on the deep learning has achieved very well performances. However, there are many problems with images in real-world shooting such as noise, blurring
+and rotating jitter, etc. These problems have an important impact on object detection.
+In YOLO network we combined the traditional image processing methods to simulate the
+problems existing in real-world shooting. After establishing the different degradation
+models, we compared the effects of different degradation models on object detection.
+We used the YOLO network to train a robust model to improve the average accuracy of real world problems. Earlier research on object detection repurposes classifiers to perform detection. Instead, we frame object detection as a regression problem to spatially separated bounding boxes and associated class probabilities.
+			\section*{Introduction}
+			Object detection is a computer vision task that involves both localizing one or more objects within an image and classifying each object in the image. YOLO is a clever convolutional neural network (CNN) for doing object detection in real-time. YOLO works completely different than most other object detection architectures. Most methods the model to an image at multiple locations and scales. High scoring regions of the image are considered detections. Yolo, on the other hand, applies a single neural network to the full image. The network divides the image into regions and predicts bounding boxes and probabilities for each region. These bounding boxes are weighted by the predicted probabilities. Image classification is one of the many exciting applications of convolutional neural networks. Aside from simple image classification, there are plenty of fascinating problems in computer vision, with object detection being one of the most interesting.The YOLO framework (You Only Look Once) on the other hand, deals with object detection in a different way. The biggest advantage of using YOLO is its superb speed. It is commonly associated with self-driving cars where systems blend computer vision, LIDAR and other technologies to generate a multidimensional representation of the road with all its participants. Object detection is also commonly used in video surveillance, especially in crowd monitoring to prevent terrorist attacks, we need to go beyond locating just one object but rather multiple objects in one image. For example, a self-driving car has to find the location of other cars, traffic lights, signs, humans and to take appropriate action based on this information.
+			\section*{Motivation}
+			In 30 or so years ago attention was an obvious topic for those in computer vision or image processing. One had to go to great lengths to process only the most relevant parts of images because computers had so little power. But now, computer power abounds and is cheap. It is the era of the large database and machine learning and brute force solutions. And results are impressive and only promise to become more so with computer power increases and declining costs.
+			\section*{Objective}
+			\begin{itemize}
+				\itemsep0em 
+ 				 \item To learn and understand the basic concept of Image Processing and Deep Learning.
+ 				 \item To learn the basics of object detection.
+ 				 \item To learn the algorithms of image processing and Deep Learning to solve real world problems.
+			\end{itemize}
+					
+			\section*{Applications}
+			\begin{itemize}
+				\itemsep0em 
+ 				 \item Machine/Robot Vision
+ 				 \item Pattern Recognition
+ 				 \item Defense and Security
+ 				 \item Health Care Diagnostic
+			\end{itemize}
+	\end{titlepage}
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\label{Bibliography}
+
+%\lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
+
+%\bibliographystyle{plain} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+
+%\bibliography{mybib} % The references (bibliography) information are stored in the file named %"Bibliography.bib"
+
+
+
+\renewcommand\bibname{References}
+
+\label{References}
+
+ {\setlength{\baselineskip}{1.2\baselineskip}
+\begin{thebibliography}{9} 
+ \bibitem{}
+Pranav Adarsh, 
+Pratibha Rathi, Manoj Kumar,"YOLO v3-Tiny: Object Detection and Recognition using 
+one stage improved model", 6th International Conference on Advanced Computing and Communication Systems 2020 (ICACCS) DOI: 10.1109/ICACCS48705.2020.9074315
+\bibitem{} Z. Chen, R. Khemmar, B. Decoux, A. Atahouet, and J. Y. Ertaud, “Real 
+time object detection, tracking, and distance and motion estimation 
+based on deep learning: Application to smart mobility,” 8th Int. Conf. 
+Emerg. Secur. Technol. EST, pp. 1–6, 2019, doi: 10.1109/EST.2019.8806222. 
+\bibitem{} R. L. Galvez, A. A. Bandala, E. P. Dadios, R. R. P. Vicerra, and J. M. Z. 
+Maningo, “Object Detection Using Convolutional Neural Networks,” 
+IEEE Reg. 10 Annu. Int. Conf. Proceedings/TENCON, vol. 2018-
+October, no. October, pp. 2023–2027, 2019, doi: 
+10.1109/TENCON.2018.8650517.
+\bibitem{}B. Benjdira, T. Khursheed, A. Koubaa, A. Ammar, and K. Ouni, “Car 
+Detection using Unmanned Aerial Vehicles: Comparison between Faster 
+R-CNN and YOLOv3,” 1st Int. Conf. Unmanned Veh. Syst., pp. 1–6, 
+2019, doi: 10.1109/UVS.2019.8658300. 
+
+
+
+ \end{thebibliography}
+
+\vspace*{1.1in} 
+\hspace*{0.2in}{\bf Prof. P.D. Walunj} \hspace{0.5in}{\bf Prof. V.K. Abhang}    \hspace{0.5in}{\bf Prof. R. L. Paikrao} \\
+\hspace*{0.2in}{\bf  Seminar Guide} \hspace{0.75in}{\bf Seminar Coordinator} \hspace{0.5in}{\bf Head of Department}\\
+\end{document}  
